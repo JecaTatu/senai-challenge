@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/views/home/home.css">
+  <!-- import font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- import bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>User Information</title>
+</head>
+
+<body>
+  <div id="header">
+    <div id="title">
+      <img id="logo" alt="Senai Logo" src="/assets/images/logo-senai.png">
+      <h1 id="text">
+        USER INFORMATION
+      </h1>
+    </div>
+  </div>
+  <div id="container">
+    <table id="user-list" class="table table-responsive">
+      <% users.forEach( user => { %>
+      <tr>
+        <td>
+          <a href="/detail/<%= user.login.username %>">
+            <strong>
+              <%= user.name.first + " " + user.name.last %></strong>
+          </a>
+        </td>
+        <td>
+          <%= user.email %>
+        </td>
+        <td>
+          <%= user.phone %>
+        </td>
+      </tr>
+      <% }); %>
+    </table>
+  </div>
+</body>
+
+</html>
