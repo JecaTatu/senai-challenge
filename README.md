@@ -1,7 +1,7 @@
 # Senai-Challenge
-Desafio para candidatura de vaga de Web Developer
+Desafio para candidatura de vaga de Web Developer no Senai
 
-Desenvolvido Utilizando JavaScript, Html5, Css3, Bootstrap e NodeJS.
+Desenvolvido Utilizando Javascript, EJS, HTML5, CSS3, Bootstrap e NodeJS.
 
 ## Rodando o projeto
 
